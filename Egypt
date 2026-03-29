@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Casino Egypt</title>
+
+<style>
+body{
+margin:0;
+background:#0b0b0b;
+font-family:Arial;
+color:#fff;
+text-align:center;
+}
+
+.wrapper{
+max-width:480px;
+margin:auto;
+}
+
+.hero img{
+width:100%;
+}
+
+.title{
+color:#ffd700;
+font-size:24px;
+font-weight:bold;
+padding:15px;
+}
+
+.btn{
+display:block;
+margin:15px;
+padding:15px;
+background:linear-gradient(45deg,#ffd700,#ff9900);
+color:#000;
+text-decoration:none;
+font-weight:bold;
+border-radius:10px;
+font-size:18px;
+}
+
+.box{
+background:#141414;
+margin:15px;
+padding:15px;
+border-radius:10px;
+text-align:right;
+}
+
+.timer{
+font-size:28px;
+color:#ffd700;
+margin:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<div class="hero">
+<img src="hero.jpg">
+</div>
+
+<div class="title">
+احصل على 70 لفة مجانية + 500% بونص
+</div>
+
+<a class="btn" href="https://1wined.life/casino/list?open=register&p=ssxi">
+ابدأ اللعب الآن
+</a>
+
+<div class="box">
+✔️ 70 لفة مجانية  
+<br>✔️ بونص 500%  
+<br>✔️ سحب سريع  
+<br>✔️ بدون تحميل  
+</div>
+
+<div class="timer" id="count">
+14:59
+</div>
+
+<a class="btn" href="https://1wined.life/casino/list?open=register&p=ssxi">
+احصل على البونص الآن
+</a>
+
+</div>
+
+<script>
+var t=899;
+setInterval(function(){
+var m=Math.floor(t/60);
+var s=t%60;
+document.getElementById("count").innerHTML=
+m+":"+(s<10?"0":"")+s;
+t--;
+},1000);
+</script>
+
+</body>
+</html>
+
